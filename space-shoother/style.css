@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins";
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #111;
+
+  overflow: hidden;
+}
+
+#main-playing-area {
+  padding: 1rem;
+
+  background: #000;
+  border-radius: 32px;
+  background-image: url(img/space.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 800px;
+  width: 650px;
+
+  overflow: hidden;
+}
+
+.title {
+  position: relative;
+  color: #eee;
+  top: 5rem;
+  left: 5rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.start-button {
+  position: relative;
+  color: #eee;
+  top: 20rem;
+  left: 16rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.start-button:hover {
+  color: #c0c0c0;
+}
+
+.player-shooter {
+  position: relative;
+  display: none;
+  height: 60px;
+  width: 70px;
+  left: 20px;
+  top: 250px;
+}
+.player-shooter.start {
+  display: inline-block;
+}
+
+.laser {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+
+.alien {
+  height: 60px;
+  width: 70px;
+  position: relative;
+}
+
+.dead-alien {
+  height: 60px;
+  width: 70px;
+  position: relative;
+  display: none;
+}
